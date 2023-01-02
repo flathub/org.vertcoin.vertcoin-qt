@@ -56,8 +56,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://raw.githubusercontent.com/vertcoin-project/packaging/22.x/debian/vertcoin-qt.desktop",
-          "sha256": "b0ee78ca7fd3938fca831f57a677eb8795a4fb7e28d250fbb6a572175c5e69d5"
+          "url": "https://raw.githubusercontent.com/vertcoin-project/packaging/0.18.0/debian/vertcoin-qt.desktop",
+          "sha256": "fb8513f9121162064d04721ce729472dce47fab5f7748cff5275a0e378ec2a23"
         },
         {
           "type": "file",
