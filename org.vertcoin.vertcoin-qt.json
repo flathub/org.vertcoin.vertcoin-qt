@@ -65,8 +65,8 @@
         },
         {
           "type": "file",
-          "url": "https://raw.githubusercontent.com/vertcoin-project/vertcoin-logo-package/master/svg/logo/vertcoin.svg",
-          "sha256": "5fbd177e289b4df55e1c28cee2667ec19b34accf209c153de8b66daf8124aab8"
+          "url": "https://raw.githubusercontent.com/vertcoin-project/packaging/master/vertcoin.svg",
+          "sha256": "bb7dce166c6f5043c3876bda9eed881bd6ae596a5cf6336dd0c03f1e94e014ee"
         },
         {
           "type": "file",
