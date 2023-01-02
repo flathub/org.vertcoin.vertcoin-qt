@@ -5,7 +5,7 @@
   <project_license>MIT</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>
-    Connect to the Vertcoin P2P network
+    Fully validating Vertcoin peer-to-peer network node, wallet and GUI
   </summary>
   <url type="homepage">
     https://vertcoin.org/
@@ -18,12 +18,9 @@
   </launchable>
   <description>
     <p>
-      Vertcoin is an experimental digital currency that enables instant
-    payments to anyone, anywhere in the world. Vertcoin uses
-    peer-to-peer technology to operate with no central authority:
-    managing transactions and issuing money are carried out
-    collectively by the network. Vertcoin Core is the name of open
-    source software which enables the use of this currency.
+    Bitcoin Core connects to the Bitcoin peer-to-peer network to download and
+    fully validate blocks and transactions. It also includes a wallet and
+    graphical user interface.
     </p>
   </description>
   <screenshots>
@@ -34,6 +31,7 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release date="2022-12-31" version="22.1"/>
     <release date="2022-04-07" version="0.18.0"/>
   </releases>
   <content_rating type="oars-1.1"/>

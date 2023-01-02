@@ -2,7 +2,7 @@
   "id": "org.vertcoin.vertcoin-qt",
   "runtime": "org.freedesktop.Platform",
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "21.08",
+  "runtime-version": "22.08",
   "command": "vertcoin-qt",
   "finish-args": [
     /* Xorg support */
@@ -32,14 +32,14 @@
         {
           "type": "archive",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/0.18.0/vertcoin-0.18.0-x86_64-linux-gnu.tar.gz",
-          "sha256": "6ded7ea883b6cf9cee95701b13eef2e601a85f91d15f255d4fc7b25db92808ec"
+          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/v22.1/vertcoin-22.1-x86_64-linux-gnu.tar.gz",
+          "sha256": "aab3068e02d55128326801cdbcbfcb175be96291e024edf5ab12f3af6f4433c0"
         },
         {
           "type": "archive",
           "only-arches": ["aarch64"],
-          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/0.18.0/vertcoin-0.18.0-aarch64-linux-gnu.tar.gz",
-          "sha256": "ae4c37fcd4e9b9e482ce137e6818c0a522f9693632c1d7041ae43ffe02725bd3"
+          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/v22.1/vertcoin-22.1-aarch64-linux-gnu.tar.gz",
+          "sha256": "f2c6e8628d61703b03bef70bc816f114f097208b9f3fa8f98e200b1cdb112933"
         }
       ]
     },
@@ -47,7 +47,8 @@
       "name": "misc",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dp -m 644 org.vertcoin.vertcoin-qt.desktop /app/share/applications/org.vertcoin.vertcoin-qt.desktop",
+        "desktop-file-edit --set-key=\"Icon\" --set-value=${FLATPAK_ID} vertcoin-qt.desktop",
+        "install -Dp -m 644 vertcoin-qt.desktop /app/share/applications/${FLATPAK_ID}.desktop",
         "install -Dp -m 644 vertcoin.svg /app/share/icons/hicolor/scalable/apps/org.vertcoin.vertcoin-qt.svg",
         "install -Dp -m 644 org.vertcoin.vertcoin-qt.metainfo.xml /app/share/metainfo/org.vertcoin.vertcoin-qt.metainfo.xml",
         "bash install_wrappers.sh"
@@ -55,7 +56,8 @@
       "sources": [
         {
           "type": "file",
-          "path": "org.vertcoin.vertcoin-qt.desktop"
+          "url": "https://raw.githubusercontent.com/vertcoin-project/packaging/22.x/debian/vertcoin-qt.desktop",
+          "sha256": "b0ee78ca7fd3938fca831f57a677eb8795a4fb7e28d250fbb6a572175c5e69d5"
         },
         {
           "type": "file",
