@@ -32,14 +32,14 @@
         {
           "type": "archive",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/v22.1/vertcoin-22.1-x86_64-linux-gnu.tar.gz",
-          "sha256": "aab3068e02d55128326801cdbcbfcb175be96291e024edf5ab12f3af6f4433c0"
+          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/v23.2/vertcoin-23.2-x86_64-linux-gnu.tar.gz",
+          "sha256": "51d01d1c7e1307edc0a88f44c3bd73ae8e088633ae85c56b08855b50882ee876"
         },
         {
           "type": "archive",
           "only-arches": ["aarch64"],
-          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/v22.1/vertcoin-22.1-aarch64-linux-gnu.tar.gz",
-          "sha256": "f2c6e8628d61703b03bef70bc816f114f097208b9f3fa8f98e200b1cdb112933"
+          "url": "https://github.com/vertcoin-project/vertcoin-core/releases/download/v23.2/vertcoin-23.2-aarch64-linux-gnu.tar.gz",
+          "sha256": "8df921bc65bacc3a2e5507275831cb7c9416614b0e8c55fa397600293fa7b246"
         }
       ]
     },
