@@ -47,7 +47,7 @@
       "name": "misc",
       "buildsystem": "simple",
       "build-commands": [
-        "desktop-file-edit --set-key=\"Icon\" --set-value=${FLATPAK_ID} vertcoin-qt.desktop",
+        "desktop-file-edit --set-icon=${FLATPAK_ID} vertcoin-qt.desktop",
         "install -Dp -m 644 vertcoin-qt.desktop /app/share/applications/${FLATPAK_ID}.desktop",
         "install -Dp -m 644 vertcoin.svg /app/share/icons/hicolor/scalable/apps/org.vertcoin.vertcoin-qt.svg",
         "install -Dp -m 644 org.vertcoin.vertcoin-qt.metainfo.xml /app/share/metainfo/org.vertcoin.vertcoin-qt.metainfo.xml",
